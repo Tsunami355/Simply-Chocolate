@@ -121,6 +121,11 @@ body{
 
 .header-socials-link{}
 
+.header-socials-icon{
+    color: #111;
+    background-color: grey;
+}
+
 
 /* ==========  Hero ==========  */
 
