@@ -42,13 +42,11 @@ body{
     margin: -1px;
     border: 0;
     padding: 0;
-
     white-space: nowrap;
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
-
 
 
 .link{
@@ -117,26 +115,37 @@ body{
     gap: 18px;
 }
 
-.header-socials-item{}
-
-.header-socials-link{}
-
-.header-socials-icon{
-    color: #111;
-    background-color: grey;
+.header-socials-item{
+    height: 24px;
 }
+
+.header-socials-link{
+    display: block;
+    fill: var(--main-page-color);
+}
+
+
+.header-socials-link.header-menu-link:is(:hover, :focus) .header-socials-icon{
+    fill: var(--accent-color);
+}
+
+
 
 
 /* ==========  Hero ==========  */
 
 .hero{
     padding-bottom: 79px;
+    
 }
 
 .hero-container{
-    background-color: #836868;
+    background-repeat: no-repeat;
+    background-size: 100%, cover;
+    background-image: linear-gradient(180deg, rgba(17, 17, 17, 0), rgba(17, 17, 17, 0.4)), url(./images/chocolate-bg.jpg);
     border-radius: 30px;
     padding: 380px 40px 40px 40px;
+   
 }
 
 .hero-title{
@@ -208,6 +217,33 @@ body{
 
 .advantages-list-item {
     width: calc((100% - 88px*2) / 3);
+    position: relative;
+}
+
+.advantages-list-item:not(:last-child)::after{
+    content: " ";
+    height: 124px;
+    width: 1px;
+    border: 1px solid #FFFFFF80;
+    position: absolute;
+    right: -44px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.advantages-block{
+    width: 62px;
+    height: 62px;
+    border: 1px solid #FFFFFF80;
+    border-radius: 50%;
+    margin-bottom: 19px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.advantages-icon{
+    fill: var(--accent-color)
 }
 
 .advantages-subtitle {
@@ -272,6 +308,52 @@ body{
     border-radius: 15px;
     padding: 28px 36px 28px 28px;
     width: calc((100% - 19px*3) / 4);
+    position: relative;
+    overflow: hidden;
+}
+
+.taste-list-item:hover .taste-cover-block{
+    transform: translateY(0);
+    
+}
+
+.taste-cover-block{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    padding: 15px;
+    height: 100%;
+    border-radius: 15px;
+    transform: translateY(100%);
+    transition: transform 300ms ease;
+    
+}
+
+.taste-cover-subtitle{
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.29;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    margin-bottom: 7px;
+
+}
+
+.taste-cover-text{
+    font-size: 14px;
+    letter-spacing:-0.02em;
+    line-height: 1.29;
+}
+
+.taste-item-orange{
+    background-color: var(--accent-color);
+    border: none;
+}
+
+.taste-item-black{
+    background-color: #1E1823;
+    border: none;
 }
 
 .taste-img{
@@ -341,12 +423,28 @@ body{
 }
 
 .made-list {
-    padding-left: 16px;
     max-width: 425px;
+}
+
+.made-list-item{
+    padding-left: 16px;
+    position: relative;
 }
 
 .made-list-item:not(:last-child) {
     margin-bottom: 24px;
+}
+
+.made-list-item::before{
+    content: "";
+    width: 8px;
+    height: 8px;
+    background-color: #4C4C4C;
+    border: 1px solid #ECEDED;
+    position: absolute;
+    left: 0;
+    top: 5px;
+    border-radius: 50%;
 }
 
 .made-item-text {
