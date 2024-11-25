@@ -122,15 +122,18 @@ body{
 
 .header-socials-link{
     display: block;
-    /* fill: var(--main-page-color); */
+    color: var(--main-page-color);
     transition: color 200ms ease;
 }
 
-
-.header-socials-link:is(:hover, :focus) .header-socials-icon{
-    fill: var(--accent-color);
+.header-socials-icon{
+    
+    fill: currentColor;
 }
 
+.header-socials-link:is(:hover, :focus){
+    color: var(--accent-color);
+}
 
 
 
