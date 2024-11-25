@@ -103,6 +103,7 @@ body{
     font-weight: 500;
     line-height: 1.14; /* 16/14 */
     letter-spacing: -0.02em;
+    transition: color 200ms ease;
 }
 
 .header-menu-link:is(:hover, :focus){
@@ -121,11 +122,12 @@ body{
 
 .header-socials-link{
     display: block;
-    fill: var(--main-page-color);
+    /* fill: var(--main-page-color); */
+    transition: color 200ms ease;
 }
 
 
-.header-socials-link.header-menu-link:is(:hover, :focus) .header-socials-icon{
+.header-socials-link:is(:hover, :focus) .header-socials-icon{
     fill: var(--accent-color);
 }
 
@@ -493,9 +495,15 @@ body{
     border-radius: 15px;
     border: 1px solid #1111111A;
     width: calc((100% - 56px) / 3);
+    position: relative;
 }
 
-.loved-img {}
+.loved-img {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 
 .loved-subtitle {
     color: var(--main-page-color);
