@@ -338,7 +338,9 @@
               </p>
             </li>
           </ul>
-          <button class="loved-btn" type="button">Leave a review</button>
+          <button class="loved-btn" type="button" data-modal-open>
+            Leave a review
+          </button>
         </div>
       </section>
     </main>
@@ -385,5 +387,20 @@
         </nav>
       </div>
     </footer>
+    <div class="backdrop" data-modal>
+      <div class="modal">
+        <button
+          type="button"
+          class="modal-close-btn"
+          title="Leave a review"
+          data-modal-close
+        >
+          <svg class="modal-icon" width="28" height="28">
+            <use href="./icons/icons.svg#icon-x-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
