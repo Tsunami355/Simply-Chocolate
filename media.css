@@ -1,0 +1,129 @@
+@media screen and (min-width: 375px) {
+    .container {
+        max-width: 365px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 734px;
+    }
+
+    .made > .container{
+        max-width: 644px;
+    }
+
+    .advantages {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .advantages-list {
+        gap: 32px;
+    }
+
+    .advantages-list-item {
+        width: calc((100% - 32px) / 2);
+    }
+
+    .taste {
+        padding-top: 80px;
+    }
+
+    .taste-title {
+        font-size: 24px;
+        line-height: 1.17;
+        margin-bottom: 28px;
+    }
+
+    .taste-list {
+        gap: 32px;
+    }
+
+    .taste-list-item {
+        width: calc((100% - 32px) / 2);
+    }
+
+    .made {
+        padding-top: 80px;
+    }
+
+    .made-title {
+        font-size: 24px;
+        line-height: 1.17;
+        margin-bottom: 50px;
+    }
+
+    .made-text {
+        margin-bottom: 28px;
+    }
+
+    .made-list {
+        max-width: 480px;
+    }
+
+    .made-content{
+        padding: 32px;
+    }
+}
+
+@media screen and (min-width: 1166px) {
+    .container, .made>.container {
+        max-width: 1166px;
+    }
+
+    .advantages-list {
+        gap: 88px;
+        padding-left: 16px;
+        padding-right: 18px;
+    }
+
+    .advantages-list-item {
+        width: calc((100% - 88px*2) / 3);
+    }
+
+    .advantages-list-item:not(:last-child)::after {
+        content: " ";
+        height: 124px;
+        width: 1px;
+        border: 1px solid #FFFFFF80;
+        position: absolute;
+        right: -44px;
+        top: 50%;
+        transform: translateY(-50%);
+
+    }
+
+    .taste {
+        padding-top: 100px;
+    }
+
+    .taste-list {
+        gap: 19px;
+    }
+
+    .taste-list-item {
+        width: calc((100% - 19px*3) / 4);
+        ;
+    }
+
+   
+
+    .made-wrap {
+        display: flex;
+        gap: 20px;
+    }
+
+    .made-list-item:not(:last-child) {
+        margin-bottom: 24px;
+    }
+
+    .made-image{
+        max-width: 600px;
+        margin-bottom: 0;
+    }
+
+    .made-content {
+        max-width: 516px;
+    }
+}

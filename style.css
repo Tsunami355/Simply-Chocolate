@@ -20,6 +20,8 @@ ol {
 
 img{
     display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 body{
@@ -29,7 +31,6 @@ body{
 
 .container{
     width: 100%;
-    max-width: 1166px;
     padding-right: 15px;
     padding-left: 15px;
     margin: 0 auto;
@@ -208,32 +209,19 @@ body{
 
 .advantages {
     background-color: #1E1823;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .advantages-list {
     display: flex;
-    gap: 88px;
-    padding-left: 16px;
-    padding-right: 18px;
-    
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 .advantages-list-item {
-    width: calc((100% - 88px*2) / 3);
+    width: 100%;
     position: relative;
-}
-
-.advantages-list-item:not(:last-child)::after{
-    content: " ";
-    height: 124px;
-    width: 1px;
-    border: 1px solid #FFFFFF80;
-    position: absolute;
-    right: -44px;
-    top: 50%;
-    transform: translateY(-50%);
 }
 
 .advantages-block{
@@ -255,7 +243,6 @@ body{
     color: var(--secondary-text-color);
     font-size: 18px;
     font-weight: 600;
-    
     margin-bottom: 18px;
 }
 
@@ -270,25 +257,24 @@ body{
 /* ==========  Taste  ==========  */
 
 .taste {
-    padding-top: 93px;
+    padding-top: 60px;
 }
 
 .taste-title {
     color: var(--main-page-color);
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 600;
-    line-height: 1.17; /* 28/24 */
+    line-height: 1.2;
     letter-spacing: -0.03em;
     text-transform: uppercase;
     text-align: center;
     max-width: 411px;
     margin: 0 auto;
-    margin-bottom: 28px;
+    margin-bottom: 24px;
 }
 
 .taste-accent{
-    color: var(--accent-color);
-    
+    color: var(--accent-color); 
 }
 
 .taste-text {
@@ -305,14 +291,15 @@ body{
 
 .taste-list {
     display: flex;
-    gap: 19px;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 .taste-list-item {
     border: 1px solid #FD9222;
     border-radius: 15px;
     padding: 28px 36px 28px 28px;
-    width: calc((100% - 19px*3) / 4);
+    width: 100%;
     position: relative;
     overflow: hidden;
 }
@@ -362,6 +349,7 @@ body{
 }
 
 .taste-img{
+    margin: 0 auto;
     margin-bottom: 36px;
 }
 
@@ -385,36 +373,36 @@ body{
 
 
 .made {
-    padding-top: 100px;
+    padding-top: 60px;
 }
 
 .made-title {
     color: var(--main-page-color);
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 600;
-    line-height: 1.17; /* 28/24 */
+    line-height: 1.2; /* 28/24 */
     letter-spacing: -0.03em;
     text-align: center;
     text-transform: uppercase;
     max-width: 205px;
     margin: 0 auto;
-    margin-bottom: 50px;
+    margin-bottom: 32px;
 }
 
 .made-accent {
     color: var(--accent-color);
 }
 
-.made-wrap{
-    display: flex;
-    gap: 20px;
-}
 
-.made-image {}
+
+.made-image{
+    margin-bottom: 20px;
+    width: 100%;
+}
 
 .made-content{
     background-color: #fff;
-    padding: 32px;
+    padding: 20px 14px;
     border-radius:15px;
 }
 
@@ -424,7 +412,7 @@ body{
     font-weight: 600;
     line-height: 1.33; /* 24/18 */
     max-width: 350px;
-    margin-bottom: 28px;
+    margin-bottom: 20px;
 }
 
 .made-list {
@@ -437,7 +425,7 @@ body{
 }
 
 .made-list-item:not(:last-child) {
-    margin-bottom: 24px;
+    margin-bottom: 18px;
 }
 
 .made-list-item::before{
@@ -766,3 +754,6 @@ body{
 .modal-textarea:focus {
     border-color: var(--accent-color);
 }
+
+
+
