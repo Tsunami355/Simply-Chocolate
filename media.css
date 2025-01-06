@@ -2,6 +2,15 @@
     .container {
         max-width: 365px;
     }
+
+    .footer-input-wrap {
+        width: 207px;
+        margin-bottom: 0;
+    }
+
+    .footer-form{
+        flex-wrap: nowrap;
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -65,6 +74,76 @@
     .made-content{
         padding: 32px;
     }
+
+    .loved {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    .loved-title{
+        font-size:24px;
+        line-height: 1.17;
+        margin-bottom: 91px;
+    }
+
+    .loved-list{
+        column-gap: 16px;
+        margin-bottom: 94px;
+    }
+
+    .loved-item{
+        width: calc((100% - 32px) / 2);
+    }
+
+    .loved-btn{
+        font-size: 18px;
+        padding: 14px 40px;
+    }
+
+    .footer {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        }
+
+    .footer-top{
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 54px;
+        margin-bottom: 24px;
+    }
+
+    .footer-mane-text{
+        font-size: 28px;
+        line-height: 1.21;
+    }
+
+    .footer-bottom{
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .footer-navigation {
+        margin-bottom: 0;
+    }
+
+    .footer-menu{
+        flex-direction: row;
+        gap: 16px;
+        margin-top: 0;
+    }
+
+    .footer-form{
+        align-items: center;
+    }
+
+    .footer-input-wrap {
+        width: 233px;
+    }
+
+    .footer-label{
+        left: 24px;
+        font-size: 18px;
+    }
 }
 
 @media screen and (min-width: 1166px) {
@@ -107,7 +186,9 @@
         ;
     }
 
-   
+    .made {
+       padding-top: 100px;
+    }
 
     .made-wrap {
         display: flex;
@@ -125,5 +206,49 @@
 
     .made-content {
         max-width: 516px;
+    }
+
+    .loved {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .loved-title{
+        margin-bottom: 119px;
+    }
+
+    .loved-list{
+        column-gap: 28px;
+        row-gap: 40px;
+        margin-bottom: 49px;
+    }
+
+    .loved-item{
+        width: calc((100% - 56px) / 3);
+    }
+
+    .footer-top{
+        padding-bottom: 50px;
+    }
+
+    .footer-menu{
+        gap: 24px;
+    }
+
+    .footer-mane-text{
+        margin-bottom: 0;
+    }
+
+    .footer-form{
+        gap: 14px;
+    }
+
+
+    .footer-input-wrap{
+        width: 313px;
+    }
+
+    .footer-form-btn{
+        padding: 17px 40px;
     }
 }
