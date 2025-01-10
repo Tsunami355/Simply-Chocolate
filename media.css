@@ -22,6 +22,31 @@
         max-width: 644px;
     }
 
+    .hero-container {
+        padding: 671px 40px 40px 40px;
+    }
+
+    .hero-title{
+        font-size: 28px;
+        line-height: 1.41;
+    }
+
+    .hero-btn{
+        margin-bottom: 0;
+        padding: 14px 40px;
+    }
+
+        
+    .hero-link{
+        margin-bottom: 0;
+        padding: 14px 40px;
+    }
+
+    .hero-down-set{
+        margin-left: auto;
+        margin-top: 0;
+    }
+
     .advantages {
         padding-top: 50px;
         padding-bottom: 50px;
@@ -144,11 +169,17 @@
         left: 24px;
         font-size: 18px;
     }
+
+    
 }
 
 @media screen and (min-width: 1166px) {
     .container, .made>.container {
         max-width: 1166px;
+    }
+
+    .hero-container {
+        padding: 380px 40px 40px 40px;
     }
 
     .advantages-list {
