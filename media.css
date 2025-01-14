@@ -22,6 +22,52 @@
         max-width: 644px;
     }
 
+    .header-menu {
+        display: flex;
+        gap: 24px;
+    }
+    
+    .header-menu-link {
+        color: var(--main-page-color);
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 1.14;
+        /* 16/14 */
+        letter-spacing: -0.02em;
+        transition: color 200ms ease;
+    }
+    
+    .header-menu-link:is(:hover, :focus) {
+        color: var(--accent-color);
+    }
+    
+    .header-socials {
+        display: flex;
+        gap: 18px;
+    }
+    
+    .header-socials-item {
+        height: 24px;
+    }
+    
+    .header-socials-link {
+        display: block;
+        color: var(--main-page-color);
+        transition: color 200ms ease;
+    }
+    
+    .header-socials-icon {
+        fill: currentColor;
+    }
+    
+    .header-socials-link:is(:hover, :focus) {
+        color: var(--accent-color);
+    }
+
+    .btn-menu-open {
+        display: none;
+    }
+
     .hero-container {
         padding: 671px 40px 40px 40px;
         background-image: linear-gradient(180deg, rgba(17, 17, 17, 0), rgba(17, 17, 17, 0.4)), url(./images/chocolate-bg-tablet.jpg);

@@ -76,9 +76,11 @@ body{
 
 .header-logo{
     color: var(--main-page-color);
-    font-size: 18px;
+    font-size: 14px;
+    /* font-size: 18px; */
     font-weight: 700;
-    line-height: 1.11; /* 20/18 */
+    line-height: 1.29;
+    /* line-height: 1.11;  */
     letter-spacing: -0.03em;
     text-transform: uppercase;
     display: flex;
@@ -89,54 +91,36 @@ body{
     font-style: italic;
 }
 
-.header-menu{
-    display: flex;
-    gap: 24px;
-}
+ .header-menu, .header-socials {
+     display: none;
+ }
 
-.header-menu-item{
-    
-}
 
-.header-menu-link{
+ .header-menu-mobile{
     color: var(--main-page-color);
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 1.14; /* 16/14 */
-    letter-spacing: -0.02em;
-    transition: color 200ms ease;
-}
+ }
 
-.header-menu-link:is(:hover, :focus){
-    color: var(--accent-color);
-}
-
-
-.header-socials{
-    display: flex;
-    gap: 18px;
-}
-
-.header-socials-item{
-    height: 24px;
-}
-
-.header-socials-link{
-    display: block;
-    color: var(--main-page-color);
-    transition: color 200ms ease;
-}
-
-.header-socials-icon{
+ .btn-menu-close{
     
-    fill: currentColor;
-}
+ }
 
-.header-socials-link:is(:hover, :focus){
-    color: var(--accent-color);
-}
+ .header-menu-close{
+    color: var(--secondary-text-color);
+ }
 
+ .mob-menu-list{}
 
+ .mob-menu-item{}
+
+ .mob-menu-link{}
+
+ .mob-socials {}
+
+ .mob-socials-item {}
+
+ .mob-socials-link {}
+
+ .mob-social-icon {}
 
 /* ==========  Hero ==========  */
 
