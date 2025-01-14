@@ -24,7 +24,16 @@
 
     .hero-container {
         padding: 671px 40px 40px 40px;
+        background-image: linear-gradient(180deg, rgba(17, 17, 17, 0), rgba(17, 17, 17, 0.4)), url(./images/chocolate-bg-tablet.jpg);
     }
+
+        @media(min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            .hero-container {
+                background-image: linear-gradient(180deg, rgba(17, 17, 17, 0), rgba(17, 17, 17, 0.4)), url(./images/chocolate-bg-tablet-2x.jpg);
+            }
+        }
 
     .hero-title{
         font-size: 28px;
@@ -180,7 +189,16 @@
 
     .hero-container {
         padding: 380px 40px 40px 40px;
+        background-image: linear-gradient(180deg, rgba(17, 17, 17, 0), rgba(17, 17, 17, 0.4)), url(./images/chocolate-bg.jpg);
     }
+
+        @media(min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            .hero-container {
+                background-image: linear-gradient(180deg, rgba(17, 17, 17, 0), rgba(17, 17, 17, 0.4)), url(./images/chocolate-bg-2x.jpg);
+            }
+        }
 
     .advantages-list {
         gap: 88px;
