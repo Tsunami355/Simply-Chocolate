@@ -98,10 +98,12 @@ body{
 
  .btn-menu-open {
      cursor: pointer;
+     border: none;
+     background-color:transparent
  }
 
  .header-menu-mobile{
-    color: var(--main-page-color);
+    fill: var(--main-page-color);
  }
 
 .mob-menu{
